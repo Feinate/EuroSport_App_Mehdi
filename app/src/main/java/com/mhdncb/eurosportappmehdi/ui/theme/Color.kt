@@ -2,6 +2,9 @@ package com.mhdncb.eurosportappmehdi.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val BlueDark = Color(0xFF0D2E66)
+val GreyColor = Color(0xFF999999)
+
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)
