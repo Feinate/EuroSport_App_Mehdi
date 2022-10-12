@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.mhdncb.eurosportappmehdi.domain.entity.MixedArticles
 import com.mhdncb.eurosportappmehdi.domain.entity.Story
 import com.mhdncb.eurosportappmehdi.domain.entity.Video
-import com.mhdncb.eurosportappmehdi.domain.repository.ArticleRepository
+import com.mhdncb.eurosportappmehdi.domain.repository.ArticlesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val postRepository: ArticleRepository
+    private val postRepository: ArticlesRepository
 ) : ViewModel() {
 
     // Loading

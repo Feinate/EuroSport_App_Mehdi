@@ -1,8 +1,8 @@
 package com.mhdncb.eurosportappmehdi.di
 
-import com.mhdncb.eurosportappmehdi.data.repository.ArticleRepositoryImpl
+import com.mhdncb.eurosportappmehdi.data.repository.ArticlesRepositoryImpl
 import com.mhdncb.eurosportappmehdi.data.service.RetrofitService
-import com.mhdncb.eurosportappmehdi.domain.repository.ArticleRepository
+import com.mhdncb.eurosportappmehdi.domain.repository.ArticlesRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,8 +15,8 @@ object RepoModule {
 
     @Provides
     @Singleton
-    fun providePostRepository(retrofitService: RetrofitService): ArticleRepository {
-        return ArticleRepositoryImpl(retrofitService)
+    fun provideArticlesRepository(retrofitService: RetrofitService): ArticlesRepository {
+        return ArticlesRepositoryImpl(retrofitService)
     }
 
 }

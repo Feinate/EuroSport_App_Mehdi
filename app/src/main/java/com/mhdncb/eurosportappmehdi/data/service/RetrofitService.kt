@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface RetrofitService {
 
     @GET("api/json-storage/bin/edfefba")
-    suspend fun getPost(): Response<Articles>
+    suspend fun getArticles(): Response<Articles>
 
 }
