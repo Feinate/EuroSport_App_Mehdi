@@ -14,12 +14,7 @@ import kotlin.coroutines.CoroutineContext
 
 class ArticlesRepositoryImpl(
     private val retrofitService: RetrofitService
-) : ArticlesRepository, CoroutineScope {
-
-    override val coroutineContext: CoroutineContext =
-        Dispatchers.IO +
-                SupervisorJob() +
-                CoroutineExceptionHandler { _, exception -> Log.e(ContentValues.TAG, exception.localizedMessage?:"Error Coroutine") }
+) : ArticlesRepository {
 
     override suspend fun getArticles(): Response<Articles> {
         return retrofitService.getArticles()
